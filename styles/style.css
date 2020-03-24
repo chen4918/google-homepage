@@ -20,10 +20,18 @@ body {
   vertical-align: middle;
 }
 
+.gmail-link:hover, .images-link:hover {
+  text-decoration: underline;
+}
+
 .apps-button {
   margin: 0 15px 0 0;
   align-self: center;
   opacity: 0.5;
+}
+
+.apps-button:hover {
+  opacity: 1.0;
 }
 
 .sign-in-button {
@@ -36,6 +44,10 @@ body {
   border-radius: 2px;
   padding: 6px 15px 15px 15px;
   background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+}
+
+.sign-in-button:hover {
+  opacity: 0.9;
 }
 
 .google-logo {
@@ -53,6 +65,10 @@ body {
   height: 44px;
   border: 1px solid #dfe1e5;
   border-radius: 24px;
+}
+
+.search-box-container:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
 }
 
 #search-icon {
@@ -102,6 +118,14 @@ body {
   font-size: 14px;
 }
 
+.search-buttons:hover {
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -130,4 +154,8 @@ footer {
   text-decoration: none;
   padding: 0 13px;
   margin: 0;
+}
+
+.footer-item:hover {
+  text-decoration: underline;
 }
