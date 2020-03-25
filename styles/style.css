@@ -2,22 +2,43 @@ body {
   font-family: arial, sans-serif;
 }
 
-.top-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+header {
+  line-height: 30px;
+  min-width: 980px;
+}
+
+.header-container-left {
+  float: left;
   font-size: 13px;
   min-width: 181px;
   height: 30px;
-  padding: 15px 15px 10px 0;
+  padding: 15px 0 0 6px;
+}
+
+.header-container-right {
+  float: right;
+  font-size: 13px;
+  min-width: 181px;
+  height: 30px;
+  padding: 15px 6px 0 0;
+}
+
+.nav-item {
+  font-size: 13px;
+  font-family: arial, sans-serif;
+  color: #5f6368;
+  text-decoration: none;
+  padding: 0 13px;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
 }
 
 .gmail-link, .images-link {
   margin: 0 15px 0 0;
   color: rgba(0, 0, 0, 0.87);
   text-decoration: none;
-  align-self: center;
-  vertical-align: middle;
 }
 
 .gmail-link:hover, .images-link:hover {
@@ -26,7 +47,6 @@ body {
 
 .apps-button {
   margin: 0 15px 0 0;
-  align-self: center;
   opacity: 0.5;
 }
 
@@ -42,12 +62,8 @@ body {
   color: #fff;
   outline: none;
   border-radius: 2px;
-  padding: 6px 15px 15px 15px;
+  padding: 6px 15px;
   background: -webkit-linear-gradient(top,#4387fd,#4683ea);
-}
-
-.sign-in-button:hover {
-  opacity: 0.9;
 }
 
 .google-logo {
@@ -145,17 +161,4 @@ footer {
 .footer-container-right {
   float: right;
   margin-right: 13px;
-}
-
-.footer-item {
-  font-size: 13px;
-  font-family: arial, sans-serif;
-  color: #5f6368;
-  text-decoration: none;
-  padding: 0 13px;
-  margin: 0;
-}
-
-.footer-item:hover {
-  text-decoration: underline;
 }
